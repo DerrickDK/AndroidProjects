@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bmi.bmiapp.Activity2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bmi_wallpaper">
+        <EditText
+            android:id="@+id/firstField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:hint="Enter Weight in kg:"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"/>
+        <EditText
+            android:id="@+id/secondField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_below="@id/firstField"
+            android:layout_marginTop="48dp"
+            android:hint="Enter Height in meters:"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"/>
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CALCULATE"
+            android:layout_below="@id/secondField"
+            android:layout_centerHorizontal="true"
+            android:onClick="CalculateBMI"/>
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calculate"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:text="@string/yourBMI"
+            android:layout_marginTop="50dp"
+            android:textSize="30dp"/>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:text="@string/yourResults" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

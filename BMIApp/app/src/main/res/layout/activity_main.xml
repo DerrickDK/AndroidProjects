@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bmi.bmiapp.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bmi_wallpaper">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="@string/BMICALCULATOR"
+            android:textSize="39dp"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/firstButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CALCULATE_ME"
+            android:layout_below="@id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:onClick="ChangeDisplay"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
