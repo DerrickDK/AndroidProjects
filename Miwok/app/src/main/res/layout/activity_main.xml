@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.miwok.miwok.MainActivity">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/history"
+            style="@style/CategoryStyle"
+            android:background="@drawable/history"
+            android:text="@string/history" />
+        <TextView
+            android:id="@+id/characters"
+            style="@style/CategoryStyle"
+            android:background="@drawable/characters"
+            android:text="@string/characters"
+            />
+        <TextView
+            android:id="@+id/worlds"
+            style="@style/CategoryStyle"
+            android:background="@drawable/world"
+            android:text="@string/category_worlds" />
+        <TextView
+            android:id="@+id/skills"
+            style="@style/CategoryStyle"
+            android:background="@drawable/skills"
+            android:text="@string/category_power"
+             />
+        <!--
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CategoryStyle"
+            android:entries="@array/categories">
+        </Spinner>
+        -->
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

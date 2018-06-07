@@ -1,0 +1,8 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">DBZ World</string>
+    <string name="category_worlds">Worlds</string>
+    <string name="characters">Characters</string>
+    <string name="history">History</string>
+    <string name="category_power">Skills</string>
+</resources>

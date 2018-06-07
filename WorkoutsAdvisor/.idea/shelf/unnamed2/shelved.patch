@@ -1,0 +1,41 @@
+Index: app/src/main/java/com/example/workoutsadvisor/workoutsadvisor/FindWorkOutActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/workoutsadvisor/workoutsadvisor/FindWorkOutActivity.java	(revision )
++++ app/src/main/java/com/example/workoutsadvisor/workoutsadvisor/FindWorkOutActivity.java	(revision )
+@@ -0,0 +1,33 @@
++package com.example.workoutsadvisor.workoutsadvisor;
++
++import android.app.Activity;
++import android.support.v7.app.AppCompatActivity;
++import android.os.Bundle;
++import android.view.View;
++import android.widget.Spinner;
++import android.widget.TextView;
++
++import java.util.List;
++
++public class FindWorkOutActivity extends Activity {
++    private WorkoutExpert expert = new WorkoutExpert();
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_find_work_out);
++    }
++    public void onClickButton(View view){
++        TextView workouts = (TextView) findViewById(R.id.workout);
++        Spinner workoutTypes = (Spinner) findViewById(R.id.workoutTypes);
++        String workout = String.valueOf(workoutTypes.getSelectedItem()); //get the value of whatever is in the spinner
++        //workouts.setText(workout); //display the workout from the spinner
++        List<String> workoutList = expert.getWorkOuts(workout); //The returned value
++        //if chest then output what we wrote
++        StringBuilder workoutsFormatted = new StringBuilder();
++        for (String work: workoutList) {
++            workoutsFormatted.append(work).append("\n");
++        }
++        workouts.setText(workoutsFormatted);
++
++    }
++}
